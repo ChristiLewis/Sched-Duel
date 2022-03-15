@@ -1,5 +1,11 @@
 //MINIFIED MOMENT VIA HTML - ADDING NODE TO ACCESS MOMENT
-// var moment = require('moment'); // require
+// var moment = require('moment'); 
+// // require
+let today = document.getElementById('currentDay')
+
+today.textContent = moment.defaultFormat
+
+// moment().hour(Number)
 
 let body = document.body;
 let hoursInADay = document.createElement("div")
@@ -21,6 +27,9 @@ let fivePM = document.createElement("li");
 let sixPM = document.createElement("li");
 let sevenPM = document.createElement("li");
 
+//CREATE INPUT IN LIST ITEMS
+let taskAtEightAM = document.createElement("input")
+
 hoursInADay.textContent = "Carpe Diem"
 //TEXT FOR LIST ITEMS
 eightAM.textContent = "8 am"
@@ -35,6 +44,9 @@ fourPM.textContent = "4 pm";
 fivePM.textContent = "5 pm";
 sixPM.textContent = "6 pm";
 sevenPM.textContent = "7 pm";
+
+//INPUT TYPE FOR TIMEFRAME
+taskAtEightAM.inputMode ="text"
 
 //APPEND HIERARCHY
 body.appendChild(hoursInADay);
@@ -54,6 +66,9 @@ hoursInADayEl.appendChild(fivePM);
 hoursInADayEl.appendChild(sixPM);
 hoursInADayEl.appendChild(sevenPM);
 
+//APPEND INPUT
+eightAM.appendChild(taskAtEightAM)
+
 hoursInADayEl.setAttribute("style", "color:white; background: #333333; padding: 5px; margin-left: 35px;");
 
-// moment().format();
+moment().format();
