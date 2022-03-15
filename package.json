@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^8.2.1"
+  },
+  "name": "sched-duel",
+  "description": "A way to capture more time. Credit super-disco for starter-code",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristiLewis/Sched-Duel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChristiLewis/Sched-Duel/issues"
+  },
+  "homepage": "https://github.com/ChristiLewis/Sched-Duel#readme"
+}
